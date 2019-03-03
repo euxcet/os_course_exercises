@@ -21,22 +21,34 @@
 
 ## 填空题
 
-* 当前常见的操作系统主要用____编程语言编写。
-* "Operating system"这个单词起源于____ 。
-* 在计算机系统中，控制和管理____ 、有效地组织____运行的系统软件称作____ 。
-* 允许多用户将若干个作业提交给计算机系统集中处理的操作系统称为____操作系统
-* 你了解的当前世界上使用最多的操作系统是____ 。
-* 应用程序通过____接口获得操作系统的服务。
-* 现代操作系统的特征包括____ ， ____ ， ____ ，____ 。
-* 操作系统内核的架构包括____ ， ____ ， ____ 。
+* 当前常见的操作系统主要用C/C++/ASM编程语言编写。
+* "Operating system"这个单词起源于Operator。
+* 在计算机系统中，控制和管理各类资源 、有效地组织多个程序运行的系统软件称作操作系统 。
+* 允许多用户将若干个作业提交给计算机系统集中处理的操作系统称为批处理操作系统
+* 你了解的当前世界上使用最多的操作系统是Android 。
+* 应用程序通过系统调用接口获得操作系统的服务。
+* 现代操作系统的特征包括并发，共享，虚拟，异步 。
+* 操作系统内核的架构包括宏内核 ， 微内核 ， 外核 。
 
 
 ## 问答题
 
 - 请总结你认为操作系统应该具有的特征有什么？并对其特征进行简要阐述。
 
+  操作系统应该具有四个特征：并发，共享，虚拟，异步 。
+
+  并发是指具有处理和调度多个程序同时执行的能力。
+
+  共享是指资源可以给多个并发执行的进程共同使用。
+
+  虚拟是指将物理上的硬件资源转化了虚拟的资源，从而更方便地实现资源的调配与使用。
+
+  异步在指在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底，而是走走停停，以不可预知的速度向前推进。
+
 
 - 为什么现在的操作系统基本上用C语言来实现？为什么没有人用python，java来实现操作系统？
+
+  C语言执行效率高，且可以直接插入汇编代码，方便操作硬件。python和java执行效率较低。
 
 ---
 
@@ -65,13 +77,3 @@
   - 输入的字符并输出你输入的字符
   - 请编写一个小程序，在RV下，能够产生各种异常/中断
   - 请编写一个小程序，在RV下，能够统计并显示内存大小
-
-## 参考资料
- - [Intel格式和AT&T格式汇编区别](http://www.cnblogs.com/hdk1993/p/4820353.html)
- - [x86汇编指令集  ](http://hiyyp1234.blog.163.com/blog/static/67786373200981811422948/)
- - [PC Assembly Language, Paul A. Carter, November 2003.](https://pdos.csail.mit.edu/6.828/2016/readings/pcasm-book.pdf)
- - [*Intel 80386 Programmer's Reference Manual*, 1987](https://pdos.csail.mit.edu/6.828/2016/readings/i386/toc.htm)
- - [IA-32 Intel Architecture Software Developer's Manuals](http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html)
- - [v9 cpu architecture](https://github.com/chyyuu/os_tutorial_lab/blob/master/v9_computer/docs/v9_computer.md)
- - [RISC-V cpu architecture](http://www.riscvbook.com/chinese/)
- - [OS相关经典论文](https://github.com/chyyuu/aos_course_info/blob/master/readinglist.md)
